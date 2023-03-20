@@ -1,0 +1,283 @@
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h3{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header{
+    padding: 1em 2em 1em 2em;
+}
+
+header, .logo-container{
+    display: flex;
+    align-items: baseline;  
+}
+
+.logo{
+    width: 100px;
+    height: 50px;  
+    object-fit: cover; 
+}
+
+.logo-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #556d4f;
+}
+
+nav{
+    margin-left: auto;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+}
+
+li{
+    padding-left: 2em;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #556d4f;
+}
+
+ul button{
+
+    padding: 0.8125em 2em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+.sign-up{
+    margin-left: 2em;
+    border: 1px solid #556d4f;
+    background: #556d4f;
+    color: white;
+}
+
+.log-in{
+    margin-left: 1em;
+    background: white;
+}
+
+/* Hero Styling */
+.hero-container{
+    position: relative;
+}
+.hero-img{
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero-content{
+    position: absolute;
+    height: 99.3%;
+    top: 0;
+    left: 0;
+    display:  grid;
+    grid-template: 1fr / 1fr 1fr;
+    width: 100vw;
+    
+}
+
+.hero-text-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.25em 0 1.5em;
+    max-width: 600px;
+}
+
+.highlight{
+    color: #fbff94;
+    font-weight: 700;
+}
+
+.hero-text-container h1{
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+    /* Search Bar Styling */
+    .search-bar{
+        align-self: self-end;
+        justify-self: center;
+        width: 100%;
+        margin: 0 0 15% 0;
+    }
+
+    i{
+        position: absolute;
+        color: #a5a5a5;
+    }
+
+    .icon{
+        padding: 20px 13px 15px 13px;
+        text-align: center;
+        max-width: 40px;
+    }
+
+    input{
+        width: 20vw;
+        padding: 20px 40px 15px 40px;
+        border: none;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    input::placeholder{
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1rem;
+    }
+
+    input[type="text"] {
+        font-size: 1rem;
+    }
+
+    .search-btn{
+        position: absolute;
+        background-color: #556d4f;
+        color: white;
+        font-weight: 700;
+        font-family: "Source Sans Pro", sans-serif;
+        padding: 20px 20px 15px 20px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border: none;
+    }
+
+/* Recommend Trail Styling */
+
+.recommend-trail-container{
+    margin: 2em 3em 1em 3em;
+    color: #3b3b3b;
+}
+
+.recommend-trail-container .recommend-title{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #556d4f;
+}
+
+.first-trail, .second-trail , .third-trail  {
+    display: flex;
+    column-gap: 2.5em;
+    margin-bottom: 2em;
+}
+
+.second-trail{
+    flex-direction: row-reverse;
+}
+
+.trail-detail{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trail-detail h1{
+    font-size: 1.75rem;
+    margin-bottom: 0.25em;
+}
+
+.trail-detail h3{
+    font-size: 1rem;
+    color: #556d4f;
+}
+
+.trail-detail p{
+    margin: 1.25em 0;
+}
+
+.trail-detail button{
+    width: 150px;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #556d4f;
+    font-family: "Source Sans Pro", sans-serif;
+    border: none;
+}
+
+.first-trail img, .second-trail img, .third-trail img{
+    max-width: 35%;
+    object-fit: cover;
+}
+
+.first-trail, .second-trail, .third-trail, .trail-detail{
+    justify-self: center;
+}
+
+/* Features Styling */
+.features-container{
+    display: flex;
+}
+
+/* Footer Styling */
+footer{
+    background-color: #1d1d1d;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo-title-img{
+    display: flex;
+    align-items: baseline;
+}
+
+footer .logo-container{
+    flex-direction: column;
+
+}
+
+footer .logo-container h3, footer .logo-container p{
+    margin: 0;
+}
+
+footer .logo-container h3{
+    color: white;
+    font-size: 1rem;
+    align-self: baseline;
+}
+
+footer .logo-container p{
+    color: #787878;
+    font-size: 0.85rem;
+}
+
+footer .logo-container img{
+    width: 50px;
+    height: 25px;
+}
+
+footer nav ul li a{
+    color: white;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+
