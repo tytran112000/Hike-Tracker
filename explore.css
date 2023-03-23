@@ -1,0 +1,706 @@
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h3{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header{
+    padding: 1em 2em 1em 2em;
+}
+
+header, .logo-container{
+    display: flex;
+    align-items: baseline;  
+}
+
+.logo{
+    width: 100px;
+    height: 50px;  
+    object-fit: cover; 
+}
+
+.logo-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #556d4f;
+}
+
+nav{
+    margin-left: auto;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+}
+
+li{
+    padding-left: 2em;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #556d4f;
+}
+
+ul button{
+    padding: 0.8125em 2em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.sign-up{
+    margin-left: 2em;
+    border: 1px solid #556d4f;
+    background: #556d4f;
+    color: white;
+}
+
+.log-in{
+    margin-left: 1em;
+    background: white;
+}
+
+/* Hero Styling */
+.hero-container{
+    position: relative;
+}
+.hero-img{
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero-content{
+    position: absolute;
+    height: 99.3%;
+    top: 0;
+    left: 0;
+    display:  grid;
+    grid-template: 1fr / 1fr 1fr;
+    width: 100vw;
+    
+}
+
+.hero-text-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5em 0 1.5em;
+    max-width: 400px;
+}
+
+.highlight{
+    color: #fbff94;
+    font-weight: 700;
+}
+
+.hero-text-container h1{
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+/* Explore Styling */
+.explore-trails{
+    margin: 2em 1.5em 1em 1.5em;
+}
+
+.explore-title{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    color: #6f6f6f;
+}
+
+.explore-content{
+    display: flex;
+    column-gap: 1.5em;
+}
+
+    /* Trail Detail Styling */
+    .trail-detail{
+        color: #333333;
+    }
+
+    .trail-name{
+        font-size: 1.25rem;   
+        
+    }
+
+    .trail-difficulty-rating{
+        font-weight: 600;
+        margin-top: 0.5em;
+    }
+
+    .trail-difficulty-rating i{
+        margin-left: 2px;
+        margin-right: 5px;
+        color: #4e9f39;
+    }
+
+    #number-of-rating{
+        color: #4e9f39;
+        text-decoration: underline;
+        margin-left: 2px;
+    }
+
+    .trail-description{
+        grid-column: 1/-1;
+        margin: 1.125em 0;
+        color: #a5a5a5;
+    }
+
+
+    .trail-one, .trail-two, .trail-three{
+        display: grid;
+        margin-bottom: 1.5em;
+        grid-template: 1fr minmax(50px, 125px) / minmax(100px, 300px) minmax(100px, 400px);
+    }
+
+    .line-1 {
+        height: 1px;
+        grid-column: 1/-1;
+        background: #a5a5a5;
+    }
+
+/* Features Styling */
+.features-container{
+    margin: 5em 1.5em 3em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2em;
+}
+
+.feature{
+    max-width: 400px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-title{
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+    color: #4e4f4e;
+}
+
+.feature-description{
+    padding: 0;
+    margin: 0;
+}
+
+.feature-link{
+    color: #4e9f39;
+}
+
+/* Footer Styling */
+footer{
+    background-color: #1d1d1d;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo-title-img{
+    display: flex;
+    align-items: baseline;
+}
+
+footer .logo-container{
+    flex-direction: column;
+
+}
+
+footer .logo-container h3, footer .logo-container p{
+    margin: 0;
+}
+
+footer .logo-container h3{
+    color: white;
+    font-size: 1rem;
+    align-self: baseline;
+}
+
+footer .logo-container p{
+    color: #787878;
+    font-size: 0.85rem;
+}
+
+footer .logo-container img{
+    width: 50px;
+    height: 25px;
+}
+
+footer nav ul li a{
+    color: white;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 480px){
+
+    /* Header and Nav */
+    header{
+        padding: 0.5em 1em .5em 1em;
+    }
+
+    .logo{
+        width: 50px;
+        height: 25px;
+    }
+
+    .logo-title{
+        font-size: 1rem;
+    }
+
+    li{
+        padding-left: 1em;
+    }
+
+    li a{
+        font-size: 10px;
+    }
+
+    .sign-up, .log-in{
+        font-size: 10px;
+        margin-left: 1em;
+    }
+
+    ul button{
+        padding: 0.5em 1em;
+    }
+
+     /* Hero Styling */
+     .hero-img{
+        height: 40vh;
+    }
+
+    .hero-content{
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        height: 98.5%;
+    }
+    
+    .hero-text-container{
+        background: none;
+        padding: 0;
+        margin: 0 1em;
+        width: 100%;
+    }
+
+    .hero-text-container h1{
+        font-size: 1.5rem;
+        max-width: 200px;
+    }
+
+    .hero-description{
+        font-size: 12px;
+        max-width: 200px;
+    }
+
+    /* Explore Styling */
+    .explore-trails{
+        margin: 1em 1em .5em 1em;
+    }
+
+    .explore-title{
+        font-size: 1.125em;
+        margin-bottom: 1em;
+    }
+
+    .explore-content{
+        flex-direction: column;
+        column-gap: 1.5em;
+    }
+
+    iframe{
+        display: none;
+    }
+
+        /* Trail Detail Styling */
+            .trail-detail{
+                grid-row: 2/3;
+            }
+            
+            .trail-one img, .trail-two img, .trail-three img{
+                grid-row: 1/2;
+            }
+
+            .trail-name{
+                font-size: 1rem; 
+                margin-top: 0.875em;  
+            }
+
+            .trail-difficulty-rating{
+                margin-top: 0.5em;
+                font-size: 0.875rem;
+            }
+
+            .trail-description{
+                margin: 1.5em 0;
+                font-size: 0.875rem;
+            }
+
+            .trail-one, .trail-two, .trail-three{
+                grid-template: 1fr minmax(25px, 50px) minmax(25px, 50px) / 1fr;
+                margin-bottom: 3em;
+            }
+
+            .line-1 {
+                display: none;
+            }
+
+    /* Feature Styling */
+    .feature{
+        max-width: 300px;
+    }
+
+    .features-container{
+        flex-direction: column;
+        row-gap: 2.5em;
+        margin: 4em 1em 2.5em 1em;
+    }
+
+    .feature-title{
+        font-size: 1rem;
+    }
+
+    .feature-description{
+        font-size: 0.8125rem;
+    }
+
+    /* Footer Styling */
+
+    footer .logo-container h3{
+        font-size: 1rem;
+    }
+
+    footer .logo-container p{
+        font-size: 0.8125rem;
+    }
+
+    footer nav ul li a{
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 600px){
+
+    /* Header and Nav */
+    header{
+        padding: 0.5em 1em .5em 1em;
+    }
+
+    .logo{
+        width: 50px;
+        height: 25px;
+    }
+
+    .logo-title{
+        font-size: 1rem;
+    }
+
+    li{
+        padding-left: 1em;
+    }
+
+    li a{
+        font-size: 10px;
+    }
+
+    .sign-up, .log-in{
+        font-size: 10px;
+        margin-left: 1em;
+    }
+
+    ul button{
+        padding: 0.5em 1em;
+    }
+
+     /* Hero Styling */
+     .hero-img{
+        height: 40vh;
+    }
+
+    .hero-content{
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        height: 98.5%;
+    }
+    
+    .hero-text-container{
+        background: none;
+        padding: 0;
+        margin: 0 1em;
+        width: 100%;
+    }
+
+    .hero-text-container h1{
+        font-size: 1.5rem;
+        max-width: 200px;
+    }
+
+    .hero-description{
+        font-size: 12px;
+        max-width: 200px;
+    }
+
+    /* Explore Styling */
+    .explore-trails{
+        margin: 1em 1em .5em 1em;
+    }
+
+    .explore-title{
+        font-size: 1.125em;
+        margin-bottom: 1em;
+    }
+
+    .explore-content{
+        flex-direction: column;
+    }
+
+    iframe{
+        display: none;
+    }
+
+        /* Trail Detail Styling */
+            .trail-detail{
+                grid-row: 2/3;
+            }
+            
+            .trail-one img, .trail-two img, .trail-three img{
+                grid-row: 1/2;
+            }
+
+            .trail-name{
+                font-size: 1rem; 
+                margin-top: 0.875em;  
+            }
+
+            .trail-difficulty-rating{
+                margin-top: 0.5em;
+                font-size: 0.875rem;
+            }
+
+            .trail-description{
+                margin: 1.5em 0;
+                font-size: 0.875rem;
+                max-width: 500px;
+            }
+
+            .trail-one, .trail-two, .trail-three{
+                grid-template: 1fr minmax(25px, 50px) minmax(25px, 50px) / 1fr;
+                margin-bottom: 3em;
+            }
+
+            .line-1 {
+                display: none;
+            }
+
+    /* Feature Styling */
+    .feature{
+        max-width: 300px;
+    }
+
+    .features-container{
+        flex-direction: column;
+        row-gap: 2.5em;
+        margin: 4em 1em 2.5em 1em;
+    }
+
+    .feature-title{
+        font-size: 1rem;
+    }
+
+    .feature-description{
+        font-size: 0.8125rem;
+    }
+
+    /* Footer Styling */
+
+    footer .logo-container h3{
+        font-size: 1rem;
+    }
+
+    footer .logo-container p{
+        font-size: 0.8125rem;
+    }
+
+    footer nav ul li a{
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px){
+
+    /* Header and Nav */
+    header{
+        padding: 0.5em 1em .5em 1em;
+    }
+
+    .logo{
+        width: 50px;
+        height: 25px;
+    }
+
+    .logo-title{
+        font-size: 1.125rem;
+    }
+
+    li{
+        padding-left: 1em;
+    }
+
+    li a{
+        font-size: 0.875rem;
+    }
+
+    .sign-up, .log-in{
+        font-size: 0.875rem;
+        margin-left: 1em;
+    }
+
+    ul button{
+        padding: 0.5em 1em;
+    }
+
+     /* Hero Styling */
+     .hero-img{
+        height: 40vh;
+    }
+
+    .hero-content{
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        height: 98.5%;
+    }
+    
+    .hero-text-container{
+        background: none;
+        padding: 0;
+        margin: 0 1em;
+        width: 100%;
+    }
+
+    .hero-text-container h1{
+        font-size: 2rem;
+        max-width: 400px;
+    }
+
+    .hero-description{
+        font-size: 1rem;
+        max-width: 400px;
+    }
+
+    /* Explore Styling */
+    .explore-trails{
+        margin: 1em 1em .5em 1em;
+    }
+
+    .explore-title{
+        font-size: 1.25em;
+        margin-bottom: 1em;
+    }
+
+    .explore-content{
+        flex-direction: column;
+        column-gap: 1.5em;
+    }
+
+    iframe{
+        display: none;
+    }
+
+        /* Trail Detail Styling */
+            .trail-detail{
+                grid-row: 2/3;
+            }
+            
+            .trail-one img, .trail-two img, .trail-three img{
+                grid-row: 1/2;
+            }
+
+            .trail-name{
+                font-size: 1.25rem; 
+                margin-top: 0.875em;  
+            }
+
+            .trail-difficulty-rating{
+                margin-top: 0.5em;
+                font-size: 1rem;
+            }
+
+            .trail-description{
+                margin: 2.25em 0;
+                font-size: 1rem;
+                max-width: 600px;
+            }
+
+            .trail-one, .trail-two, .trail-three{
+                grid-template: 1fr minmax(25px, 50px) minmax(25px, 70px) / 1fr;
+                margin-bottom: 4em;
+            }
+
+            .line-1 {
+                display: none;
+            }
+
+    /* Feature Styling */
+    .feature{
+        max-width: 400px;
+    }
+
+    .features-container{
+        flex-direction: column;
+        row-gap: 2.5em;
+        margin: 2.5em 1em 2.5em 1em;
+    }
+
+    .feature-title{
+        font-size: 1.25rem;
+    }
+
+    .feature-description{
+        font-size: 1rem;
+    }
+
+    /* Footer Styling */
+
+    footer .logo-container h3{
+        font-size: 1.125rem;
+    }
+
+    footer .logo-container p{
+        font-size: 0.8125rem;
+    }
+
+    footer nav ul li a{
+        font-size: 0.8125rem;
+    }
+}
